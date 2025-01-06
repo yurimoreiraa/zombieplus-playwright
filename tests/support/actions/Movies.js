@@ -1,19 +1,23 @@
 const { expect } = require('@playwright/test')
 
-export class MoviesPage {
+export class Movies {
 
     constructor(page) {
         this.page = page
     }
 
-    async isLoggedIn() {
-        await this.page.waitForLoadState('networkidle') //utlizado para aguarda a página carregar por completo até o próximo passo
-        await expect(this.page).toHaveURL(/.*admin/)
+    async goForm() {
+        await this.page.locator('a[href$="register"]').click()
+    }
+
+    async submit(){
+        await this.page.getByRole('button', { name: 'Cadastrar' }).click()
+
     }
 
     async create(title, overview, company, release_year) {
 
-        await this.page.locator('a[href$="register"]').click()
+        await this.goForm()
 
         await this.page.getByLabel('Titulo do filme').fill(title)
         await this.page.getByLabel('Sinopse').fill(overview)
@@ -32,6 +36,11 @@ export class MoviesPage {
             .filter({ hasText: release_year })
             .click()
 
-        await this.page.getByRole('button', {name: 'Cadastrar'}).click()
+        await this.submit()
+    }
+
+    async alertHaveText(text) {
+        const alert = this.page.locator('span[class$=alert]')
+        await expect(alert).toHaveText(text)
     }
 }
