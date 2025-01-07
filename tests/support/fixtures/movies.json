@@ -4,16 +4,16 @@
       "overview": "Um ex-investigador da ONU luta contra o tempo para evitar que uma pandemia zumbi extermine a humanidade.",
       "company": "Paramount Pictures",
       "release_year": 2013,
-      "featured": false,
-      "cover": "/images/world_war_z.png"
+      "featured": true,
+      "cover": "/covers/movies/wwz.png"
     },
-    "resident_evil_o_hospede_maldito": {
+    "duplicate": {
       "title": "Resident Evil: O Hóspede Maldito",
       "overview": "Uma equipe especial investiga um laboratório subterrâneo após um surto viral que transforma humanos em zumbis.",
       "company": "Sony Pictures",
       "release_year": 2002,
       "featured": false,
-      "cover": "/images/resident_evil.png"
+      "cover": "/covers/movies/resident-evil.jpg"
     },
     "exterminio": {
       "title": "Extermínio",
