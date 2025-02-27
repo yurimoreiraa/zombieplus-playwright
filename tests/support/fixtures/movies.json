@@ -1,84 +1,60 @@
 {
-    "create": {
-      "title": "Guerra Mundial Z",
-      "overview": "Um ex-investigador da ONU luta contra o tempo para evitar que uma pandemia zumbi extermine a humanidade.",
-      "company": "Paramount Pictures",
-      "release_year": 2013,
-      "featured": true,
-      "cover": "/covers/movies/wwz.png"
-    },
-    "duplicate": {
-      "title": "Resident Evil: O Hóspede Maldito",
-      "overview": "Uma equipe especial investiga um laboratório subterrâneo após um surto viral que transforma humanos em zumbis.",
-      "company": "Sony Pictures",
-      "release_year": 2002,
-      "featured": false,
-      "cover": "/covers/movies/resident-evil.jpg"
-    },
-    "exterminio": {
-      "title": "Extermínio",
-      "overview": "Após um vírus devastar a Grã-Bretanha, sobreviventes lutam para encontrar refúgio.",
-      "company": "Fox Searchlight Pictures",
-      "release_year": 2002,
-      "featured": false,
-      "cover": "/images/28_days_later.png"
-    },
-    "zumbilandia": {
-      "title": "Zumbilândia",
-      "overview": "Um grupo improvável de sobreviventes viaja pelos EUA infestados de zumbis.",
-      "company": "Sony Pictures",
-      "release_year": 2009,
-      "featured": false,
-      "cover": "/images/zombieland.png"
-    },
-    "eu_sou_a_lenda": {
-      "title": "Eu Sou a Lenda",
-      "overview": "Um cientista luta para encontrar a cura para um vírus que transformou a humanidade.",
-      "company": "Warner Bros.",
-      "release_year": 2007,
-      "featured": false,
-      "cover": "/images/i_am_legend.png"
-    },
-    "madrugada_dos_mortos": {
-      "title": "Madrugada dos Mortos",
-      "overview": "Sobreviventes buscam refúgio em um shopping enquanto zumbis tomam conta da cidade.",
-      "company": "Universal Pictures",
-      "release_year": 2004,
-      "featured": false,
-      "cover": "/images/dawn_of_the_dead.png"
-    },
-    "rec": {
-      "title": "REC",
-      "overview": "Uma repórter e seu cinegrafista ficam presos em um prédio infestado por infectados.",
-      "company": "Filmax International",
-      "release_year": 2007,
-      "featured": false,
-      "cover": "/images/rec.png"
-    },
-    "the_walking_dead_piloto": {
-      "title": "The Walking Dead (Piloto)",
-      "overview": "Um policial acorda de um coma para encontrar o mundo dominado por zumbis.",
-      "company": "AMC",
-      "release_year": 2010,
-      "featured": false,
-      "cover": "/images/the_walking_dead.png"
-    },
-    "orgulho_e_preconceito_e_zumbis": {
-      "title": "Orgulho e Preconceito e Zumbis",
-      "overview": "Uma adaptação criativa do clássico de Jane Austen com zumbis.",
-      "company": "Sony Pictures",
-      "release_year": 2016,
-      "featured": false,
-      "cover": "/images/pride_prejudice_zombies.png"
-    },
-    "train_to_busan": {
-      "title": "Train to Busan",
-      "overview": "Passageiros de um trem para Busan enfrentam um apocalipse zumbi em curso.",
-      "company": "Next Entertainment World",
-      "release_year": 2016,
-      "featured": false,
-      "cover": "/images/train_to_busan.png"
-    }
+  "create": {
+    "title": "Guerra Mundial Z",
+    "overview": "Um ex-investigador da ONU luta contra o tempo para evitar que uma pandemia zumbi extermine a humanidade.",
+    "company": "Paramount Pictures",
+    "release_year": 2013,
+    "featured": true,
+    "cover": "/covers/movies/wwz.png"
+  },
+  "duplicate": {
+    "title": "Resident Evil: O Hóspede Maldito",
+    "overview": "Uma equipe especial investiga um laboratório subterrâneo após um surto viral que transforma humanos em zumbis.",
+    "company": "Sony Pictures",
+    "release_year": 2002,
+    "featured": false,
+    "cover": "/covers/movies/resident-evil.jpg"
+  },
+  "to_remove": {
+    "title": "Extermínio",
+    "overview": "Após um vírus devastar a Grã-Bretanha, sobreviventes lutam para encontrar refúgio.",
+    "company": "Fox Entertainment",
+    "release_year": 2002,
+    "featured": false,
+    "cover": "/covers/movies/exterminio.jpg"
+  },
+  "search": {
+    "input": "zumbi",
+    "outputs": [
+      "Zumbilândia",
+      "Orgulho e Preconceito e Zumbis",
+      "Meu Namorado é um Zumbi"
+    ],
+    "data": [
+      {
+        "title": "Zumbilândia",
+        "overview": "Um grupo improvável de sobreviventes viaja pelos EUA infestados de zumbis.",
+        "company": "Sony Pictures",
+        "release_year": 2009,
+        "featured": false,
+        "cover": "/covers/movies/zombilandia.jpg"
+      },
+      {
+        "title": "Orgulho e Preconceito e Zumbis",
+        "overview": "Uma adaptação criativa do clássico de Jane Austen com zumbis.",
+        "company": "Netflix",
+        "release_year": 2016,
+        "featured": false,
+        "cover": "/covers/movies/opz.jpg"
+      },
+      {
+        "title": "Meu Namorado é um Zumbi",
+        "overview": "Um zumbi incomum resgata uma jovem humana e inicia uma improvável história de amor em meio a um apocalipse.",
+        "company": "Amazon Studios",
+        "release_year": 2013,
+        "featured": false,
+        "cover": "/covers/movies/warm-bodies.jpg"
+      }
+    ]
   }
-  
-  
+}
