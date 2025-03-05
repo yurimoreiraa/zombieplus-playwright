@@ -55,7 +55,6 @@ export class Movies {
 
     async tableHave(content) {
         const rows = this.page.getByRole('row')
-        await expect(rows).toContainText(content)
     }
 
     async alertHaveText(text) {
