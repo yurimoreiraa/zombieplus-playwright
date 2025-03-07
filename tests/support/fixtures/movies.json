@@ -27,8 +27,9 @@
     "input": "zumbi",
     "outputs": [
       "Zumbilândia",
-      "Orgulho e Preconceito e Zumbis",
-      "Meu Namorado é um Zumbi"
+      "Meu Namorado é um Zumbi",
+      "Orgulho e Preconceito e Zumbis"
+      
     ],
     "data": [
       {
@@ -37,7 +38,7 @@
         "company": "Sony Pictures",
         "release_year": 2009,
         "featured": false,
-        "cover": "/covers/movies/zombilandia.jpg"
+        "cover": "/covers/movies/zumbilandia.jpg"
       },
       {
         "title": "Orgulho e Preconceito e Zumbis",

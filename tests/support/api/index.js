@@ -1,3 +1,5 @@
+import { Tvshows } from '../actions/Tvshows'
+import fs from 'fs'
 require('dotenv').config()
 const { expect } = require('@playwright/test')
 
@@ -5,6 +7,7 @@ export class Api {
 
     constructor(request) {
         this.baseApi = process.env.BASE_API
+        this.baseCover = process.env.BASE_COVER
         this.request = request
         this.token = undefined
     }
@@ -54,7 +57,32 @@ export class Api {
                 overview: movie.overview,
                 company_id: companyId,
                 release_year: movie.release_year,
+                cover: fs.createReadStream(this.baseCover + movie.cover),
                 featured: movie.featured
+            }
+        })
+
+        expect(response.ok()).toBeTruthy()
+    }
+
+    async postTvshow(tvshow) {
+
+        const companyId = await this.geyCompanyIdByName(tvshow.company)
+
+        const response = await this.request.post(this.baseApi + '/tvshows', {
+            headers: {
+                Authorization: this.token,
+                ContentType: 'multipart/form-data',
+                Accept: 'application/json, text/plain, */*'
+            },
+            multipart: {
+                title: tvshow.title,
+                overview: tvshow.overview,
+                company_id: companyId,
+                release_year: tvshow.release_year,
+                seasons: tvshow.season,
+                cover: fs.createReadStream(this.baseCover + tvshow.cover),
+                featured: tvshow.featured
             }
         })
 
